@@ -69,7 +69,6 @@ public class ProductsServiceImpl implements ProductsService {
 			products = productRep.getAllProducts();
 		}
 		for (int i=0; i< products.size(); i++) {
-			System.out.println(products.get(i).toString());
 			if(products.get(i)!=null && products.get(i).getSlotID() == -1) {
 				products.get(i).setProductID(productId);
 				products.get(i).setColor(color);
